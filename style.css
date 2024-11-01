@@ -1,22 +1,152 @@
-/* style.css */
+/* Global Styles */
 body {
-    background-color: #f8f9fa; /* Light background color */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f7f3f0;
+    margin: 0;
+    padding: 0;
 }
 
-h2 {
-    margin-top: 30px;
-    color: #333; /* Dark color for headings */
+/* Navbar Styling */
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    color: #d4af37;
+}
+
+/* Carousel Styling */
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(80%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Section Styling */
+.section {
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 #our-story, #event-details, #rsvp {
-    padding: 20px;
-    border: 1px solid #ccc; /* Light border */
-    border-radius: 8px; /* Rounded corners */
-    background-color: #fff; /* White background for content sections */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
 }
 
-img {
-    display: block; /* Center images */
+h2 {
+    color: #d4af37;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Form Styling */
+form {
+    max-width: 600px;
     margin: 0 auto;
-    border-radius: 10px; /* Rounded image corners */
+    background-color: #fafafa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    color: #333;
+    font-weight: 500;
+}
+
+.form-control {
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+}
+
+.btn-primary {
+    background-color: #d4af37;
+    border-color: #d4af37;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #b8972b;
+    border-color: #b8972b;
+}
+
+/* RSVP Image */
+#rsvp img {
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+/* Decorative Image */
+img[alt="Decorative Image"] {
+    display: block;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+
+#about-couple {
+    padding: 2em;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-top: 2em;
+    text-align: center;
+}
+
+#about-couple h2 {
+    color: #333;
+    margin-bottom: 1.5em;
+}
+
+#about-couple .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+}
+
+#about-couple .col-md-6 {
+    background-color: #ffffff;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about-couple h3 {
+    color: #555;
+    margin-bottom: 0.5em;
+}
+
+#about-couple p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
 }
